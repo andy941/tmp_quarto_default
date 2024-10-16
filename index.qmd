@@ -1,0 +1,38 @@
+---
+title: Title
+authors:
+  name: Andrea Finocchio
+  affiliation: Illumina
+  roles: Senior Bioinformatics Scientist
+  corresponding: true
+---
+
+```{python}
+#| label: imports-and-functions-python
+#| code-summary: "Imports and Functions - Python"
+#| output: false
+
+import pandas as pd
+```
+
+
+For a demonstration of a line plot on a polar axis, see @fig-polar.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r);
+ax.set_rticks([0.5, 1, 1.5, 2]);
+ax.grid(True);
+plt.show()
+```
+
