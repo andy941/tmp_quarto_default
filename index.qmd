@@ -2,8 +2,8 @@
 title: Title
 authors:
   name: Andrea Finocchio
-  affiliation: Illumina
-  roles: Senior Bioinformatics Scientist
+  affiliation: University of barely anything
+  roles: Senior Pasta Cafudder
   corresponding: true
 ---
 
